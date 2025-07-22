@@ -1,0 +1,20 @@
+{
+	"name": "store-station",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.24.3"
+	},
+	"dependencies": {
+		"cloudflare-test-utils": "^1.0.2",
+		"hono": "^4.8.5",
+		"octokit": "^5.0.3"
+	}
+}

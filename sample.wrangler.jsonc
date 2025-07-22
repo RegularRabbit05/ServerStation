@@ -1,0 +1,26 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "store-station",
+	"main": "src/index.js",
+	"workers_dev": false,
+	"preview_urls": false,
+	"compatibility_date": "2025-07-12",
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"AGENT_VERSION": "PlayStoreStation",
+		"MIN_VERSION": "1.0",
+		"PAGE_SIZE": 10,
+		"OUTDATED_TEXT": "Your Store version is too old. Please update and retry.",
+		"UPDATE_URL": "GET /repos/StoreStation/StoreStation/releases",
+		"UPDATE_KEY": "---- A GitHub personal access token with access to the UPDATE_URL repository ----",
+		"REPOSITORY": "https://raw.githubusercontent.com/StoreStation/StoreData/refs/heads/main/",
+		"FETCH_SERVICE": "https://raw.githubusercontent.com/",
+		"FETCH_DEST": "/refs/heads/main/storepkg.json",
+		"PROXY_URLS": {
+			"github": "https://github.com/",
+			"githubusercontent": "https://raw.githubusercontent.com/"
+		}
+	}
+}
