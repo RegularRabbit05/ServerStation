@@ -14,6 +14,7 @@
 		"PAGE_SIZE": 10,
 		"OUTDATED_TEXT": "Your Store version is too old. Please update and retry.",
 		"UPDATE_URL": "GET /repos/StoreStation/StoreStation/releases",
+		"ASSETS_URL": "---- Link to a ZIP file to be loaded in memory by the client and mounted as /assets override ----",
 		"UPDATE_KEY": "---- A GitHub personal access token with access to the UPDATE_URL repository ----",
 		"REPOSITORY": "https://raw.githubusercontent.com/StoreStation/StoreData/refs/heads/main/",
 		"FETCH_SERVICE": "https://raw.githubusercontent.com/",

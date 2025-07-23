@@ -84,7 +84,18 @@ async function pingMotdHandler(c) {
     return c.text(selectedText);
 }
 
+async function pingAssetsHandler(c) {
+    const { ASSETS_URL } = env(c);
+    if (ASSETS_URL && ASSETS_URL !== "") {
+        const file = await fetch(ASSETS_URL);
+        if (!file.ok) return c.text('');
+        return c.body(await file.arrayBuffer());
+    }
+    return c.text('');
+}
+
 app.get('', pingHandler)
 app.get('/motd', pingMotdHandler)
+app.get('/assets', pingAssetsHandler)
 
 export default app
