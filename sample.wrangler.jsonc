@@ -16,9 +16,11 @@
 		"UPDATE_URL": "GET /repos/StoreStation/StoreStation/releases",
 		"ASSETS_URL": "---- Link to a ZIP file to be loaded in memory by the client and mounted as /assets override ----",
 		"UPDATE_KEY": "---- A GitHub personal access token with access to the UPDATE_URL repository ----",
+		"GITHUB_KEY": "---- A GitHub personal access token to read repositories branch information ----",
+		"BRANCH_URL": "GET /repos",
 		"REPOSITORY": "https://raw.githubusercontent.com/StoreStation/StoreData/refs/heads/main/",
 		"FETCH_SERVICE": "https://raw.githubusercontent.com/",
-		"FETCH_DEST": "/refs/heads/main/storepkg.json",
+		"FETCH_DEST": "/storepkg.json",
 		"PROXY_URLS": {
 			"github": "https://github.com/",
 			"githubusercontent": "https://raw.githubusercontent.com/"
