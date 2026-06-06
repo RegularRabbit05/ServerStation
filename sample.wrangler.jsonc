@@ -23,7 +23,8 @@
 		"FETCH_DEST": "/storepkg.json",
 		"PROXY_URLS": {
 			"github": "https://github.com/",
-			"githubusercontent": "https://raw.githubusercontent.com/"
+			"githubusercontent": "https://raw.githubusercontent.com/",
+            "sonypsp": "http://du01.psp.update.playstation.org/update/psp/"
 		}
 	}
 }
